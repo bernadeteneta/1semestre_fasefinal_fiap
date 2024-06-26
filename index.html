@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinTech - Registro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-dark">
+    <header>
+      <nav class="navbar navbar-expand-lg header-grey">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">FinTech</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  href="./pages/tipos-investimento.html"
+                  >Tipos de investimento</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <form
+        method="post"
+        action=""
+        class="p-3 text-light row justify-content-evenly text-center"
+      >
+        <div class="col-md-3 d-flex flex-column justify-content-center">
+          <p class="text-center h3 mb-2">
+            Qual é seu objetivo de vida através dos seus investimentos?
+          </p>
+          <div class="form-check py-2 mt-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Viver de renda passiva
+            </label>
+          </div>
+          <div class="form-check py-2 mt-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              Acumular patrimônio
+            </label>
+          </div>
+          <div class="form-check py-2 mt-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault3"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault3">
+              Comprar um bem imobilizado
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex flex-column px-lg-5">
+          <p class="text-center h3 mt-5 mb-2">Informações</p>
+          <label for="custoVida" class="mt-2 mt-md-5"
+            >Qual é o seu custo de vida mensal?</label
+          >
+          <input
+            type="text"
+            name="custoVida"
+            id="custoVida"
+            placeholder="R$3.500,00"
+            class="input-bg-grey border-0 rounded-1 text-light text-center"
+            autofocus
+            required
+          />
+          <label for="regimeCasamento" class="mt-5"
+            >É casado(a)? Se sim, qual regime?</label
+          >
+          <input
+            type="text"
+            name="regimeCasamento"
+            id="regimeCasamento"
+            placeholder="Comunhão total"
+            class="input-bg-grey border-0 rounded-1 text-light text-center"
+            required
+          />
+          <label for="qntFilhos" class="mt-5"
+            >Tem filhos? Se sim, quantos?</label
+          >
+          <input
+            type="text"
+            name="qntFilhos"
+            id="qntFilhos"
+            placeholder="2 filhos"
+            class="input-bg-grey border-0 rounded-1 text-light text-center"
+            required
+          />
+          <p class="mt-5">Possui planejamento sucessório?</p>
+          <div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="planejSucessorio1"
+                value="sim"
+              />
+              <label class="form-check-label" for="planejSucessorio1"
+                >Sim</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="planejSucessorio2"
+                value="nao"
+                checked
+              />
+              <label class="form-check-label" for="planejSucessorio2"
+                >Não</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex flex-column px-lg-5">
+          <p class="text-center h3 mt-5 mb-2">Em relação aos seus objetivos</p>
+          <label for="valorFinal" class="mt-2 mt-md-5"
+            >Qual valor deseja alcançar?</label
+          >
+          <input
+            type="text"
+            name="valorFinal"
+            id="valorFinal"
+            class="bg-dark border-0 border-bottom border-success text-light text-center"
+            required
+          />
+          <label for="invMensal" class="mt-5">Investimento mensal:</label>
+          <input
+            type="text"
+            name="invMensal"
+            id="invMensal"
+            class="bg-dark border-0 border-bottom border-info text-light text-center"
+            required
+          />
+          <label for="taxaJuros" class="mt-5">Taxa de juros:</label>
+          <input
+            type="text"
+            name="taxaJuros"
+            id="taxaJuros"
+            class="bg-dark border-0 border-bottom border-warning text-light text-center"
+            required
+          />
+          <label for="qntTempo" class="mt-5">Em quanto tempo?</label>
+          <input
+            type="text"
+            name="qntTempo"
+            id="qntTempo"
+            class="bg-dark border-0 border-bottom border-primary text-light text-center"
+            required
+          />
+        </div>
+        <div class="d-flex justify-content-center my-5">
+          <a
+            href="./pages/tipos-investimento.html"
+            class="btn btn-danger me-sm-1"
+            >Cancelar</a
+          >
+          <button type="submit" class="btn btn-success text-light ms-1">
+            Confirmar
+          </button>
+        </div>
+      </form>
+    </div>
+    <footer class="footer mt-auto text-center header-grey text-light">
+      <p class="mt-2 h4">Desenvolvido por Bernadete Neta.</p>
+      <p class="lead">2024. Todos os direitos reservados.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
